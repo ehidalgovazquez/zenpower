@@ -1,0 +1,66 @@
+---
+import './src/styles/global.css';
+import ProductFeature from '../components/ProductFeature.astro';
+import Button from '../components/Button.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <section class="bg-gradient-to-b from-white to-gray-100 py-20">
+    <div class="container mx-auto px-6">
+      <h1 class="text-5xl font-extrabold text-center text-gray-800 mb-12">
+        Descobreix Tota la Gama ZenPower
+      </h1>
+
+      <div class="space-y-16">
+        <ProductFeature
+          title="ZENPOWER ORIGINAL"
+          desc="Refresca la teva ment i cos amb ZenPower Original. Energia equilibrada per al teu dia."
+          img="/assets/prod1.png"
+          color="#A3E635"
+        />
+
+        <ProductFeature
+          title="ZENPOWER CITRUS FOCUS"
+          desc="Amb un toc cítric revitalitzant, et manté enfocat i actiu sense sobresalts."
+          img="/assets/prod2.png"
+          color="#FB923C"
+        />
+
+        <ProductFeature
+          title="ZENPOWER HERBAL ENERGY"
+          desc="Fes el ple d'energia amb herbes naturals. Una explosió refrescant amb suport adaptogènic."
+          img="/assets/prod3.png"
+          color="#EF4444"
+        />
+
+        <ProductFeature
+          title="ZENPOWER TROPICAL ZEN"
+          desc="Una combinació tropical per portar-te a un estat de calma activa."
+          img="/assets/prod4.png"
+          color="#34D399"
+        />
+
+        <ProductFeature
+          title="ZENPOWER LEMON BOOST"
+          desc="Energitza el teu dia amb un esclat de llimona i vitalitat immediata."
+          img="/assets/prod5.png"
+          color="#FACC15"
+        />
+
+        <ProductFeature
+          title="ZENPOWER FRESH BERRY"
+          desc="Fruites del bosc, frescor instantània i focus mental al teu abast."
+          img="/assets/prod6.png"
+          color="#F472B6"
+        />
+      </div>
+
+      <div class="mt-20 flex justify-center">
+        <div class="mt-20 flex justify-center">
+            <Button href="/" text="Torna a la Pàgina Principal" />
+          </div>
+      </div>
+    </div>
+  </section>
+</Layout>

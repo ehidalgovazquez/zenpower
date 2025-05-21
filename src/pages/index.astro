@@ -1,0 +1,135 @@
+---
+import Layout from '../layouts/Layout.astro';
+import './src/styles/global.css'
+import ProductFeature from '../components/ProductFeature.astro';
+---
+<Layout>
+    <!-- Hero Section -->
+    <section class="relative h-screen overflow-hidden">
+      <video
+        class="absolute top-0 left-0 w-full h-full object-cover"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        poster="/assets/ZenPower-poster.png"
+      >
+        <source src="/assets/ZenPower.mp4" type="video/mp4" />
+        El teu navegador no suporta vídeo HTML5.
+      </video>
+      <div class="relative z-10 flex flex-col items-center justify-center h-full bg-opacity-40 text-center px-4">
+        <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">
+          Descobreix ZenPower
+        </h1>
+        <p class="text-xl md:text-2xl text-white mb-6">
+          Refresca el teu cos. Enfoca la teva ment.
+        </p>
+        <a
+          href="#productes"
+          class="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-lg transition"
+        >
+          Compra Ara
+        </a>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productes" class="py-20 bg-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-semibold mb-8">Els Nostres Productes</h2>
+        <div class="grid gap-8 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
+			<a class="group block p-6 content-center bg-gray-50 rounded-lg shadow-lg transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+				<img src="/assets/prod1.png" alt="Producte 1" class="h-48 object-cover rounded-md mb-4 mx-auto" />
+				<h3 class="text-2xl font-medium group-hover:text-green-600 text-center">ZenPower Original</h3>
+			</a>
+			
+			<a class="group block p-6 content-center bg-gray-50 rounded-lg shadow-lg transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+				<img src="/assets/prod2.png" alt="Producte 2" class="h-48 object-cover rounded-md mb-4 mx-auto" />
+				<h3 class="text-2xl font-medium group-hover:text-orange-600 text-center">ZenPower Citrus Focus</h3>
+			</a>
+		
+			<a class="group block p-6 content-center bg-gray-50 rounded-lg shadow-lg transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+				<img src="/assets/prod3.png" alt="Producte 3" class="h-48 object-cover rounded-md mb-4 mx-auto" />
+				<h3 class="text-2xl font-medium group-hover:text-red-600 text-center">ZenPower Herbal Energy</h3>
+			</a>
+		
+			<a class="group block p-6 content-center bg-gray-50 rounded-lg shadow-lg transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+				<img src="/assets/prod4.png" alt="Producte 4" class="h-48 object-cover rounded-md mb-4 mx-auto" />
+				<h3 class="text-2xl font-medium group-hover:text-green-800 text-center">ZenPower Tropical Zen</h3>
+			</a>
+		
+			<a class="group block p-6 content-center bg-gray-50 rounded-lg shadow-lg transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+				<img src="/assets/prod5.png" alt="Producte 5" class="h-48 object-cover rounded-md mb-4 mx-auto" />
+				<h3 class="text-2xl font-medium group-hover:text-yellow-600 text-center">ZenPower Lemon Boost</h3>
+			</a>
+
+			<a class="group block p-6 content-center bg-gray-50 rounded-lg shadow-lg transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+				<img src="/assets/prod6.png" alt="Producte 6" class="h-48 object-cover rounded-md mb-4 mx-auto" />
+				<h3 class="text-2xl font-medium group-hover:text-pink-600 text-center">ZenPower Fresh Berry</h3>
+			</a>
+        </div>
+      </div>
+	  <div class="mt-12 flex justify-center">
+		<a href="/tots-els-productes"
+		   class="inline-block bg-green-600 text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-green-700 transition duration-300">
+		  Veure Tots els Productes
+		</a>
+	  </div>
+    </section>
+
+    <!-- Parallax Testimonial Section -->
+    <section
+      class="relative h-96 bg-fixed bg-center bg-cover flex items-center justify-center text-white"
+      style="background-image: url('/assets/testimonials-bg.png');"
+    >
+      <div class="bg-black bg-opacity-50 p-8 rounded-lg max-w-xl text-center">
+        <blockquote class="text-xl italic mb-4">
+          "ZenPower m'ajuda a mantenir-me concentrada durant tot el dia. Refrescant i amb un toc d'energia natural!"
+        </blockquote>
+        <cite class="font-semibold">— Maria Pérez, Influencer</cite>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6 max-w-3xl">
+        <h2 class="text-4xl font-semibold mb-6 text-center">Sobre ZenPower</h2>
+        <p class="text-lg leading-relaxed mb-4">
+          ZenPower és la combinació perfecta entre frescor i energia equilibrada. Formulada amb ingredients naturals i adaptògens, ajuda a mantenir la claredat mental mentre revitalitza el cos.
+        </p>
+        <p class="text-lg leading-relaxed">
+          Cadascuna de les nostres variants ha estat dissenyada per oferir-te una experiència sensorial única, aportant focus sense nerviosisme i energia sense caigudes brusques. Ideal per a qui vol rendir al màxim amb harmonia.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-200 py-12">
+      <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Contacte</h3>
+          <p>Email: info@zenpower.com</p>
+          <p>Tel: +34 600 123 456</p>
+          <p>Adreça: Carrer Fictici 123, Barcelona</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Enllaços Ràpids</h3>
+          <ul>
+            <li><a href="#productes" class="hover:text-white">Productes</a></li>
+            <li><a href="#sobre" class="hover:text-white">Sobre</a></li>
+            <li><a href="#" class="hover:text-white">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Segueix-nos</h3>
+          <div class="flex space-x-4">
+            <a href="#" aria-label="Instagram" class="hover:text-white">IG</a>
+            <a href="#" aria-label="Facebook" class="hover:text-white">FB</a>
+            <a href="#" aria-label="Twitter" class="hover:text-white">TW</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-8 text-sm">&copy; 2025 ZenPower. Tots els drets reservats.</div>
+    </footer>
+</Layout>
